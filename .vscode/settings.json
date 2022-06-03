@@ -9,5 +9,6 @@
     "source.fixAll.eslint": true // 保存時に ESLint で修正する
     // "source.organizeImports": true, //保存時に import を整理する
   },
-  "cSpell.words": ["asuka", "matsumoto", "microcms", "seitai"]
+  "cSpell.words": ["asuka", "maru", "matsumoto", "microcms", "Noto", "seitai"],
+  "typescript.preferences.jsxAttributeCompletionStyle": "braces"
 }
