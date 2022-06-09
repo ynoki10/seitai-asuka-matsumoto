@@ -26,7 +26,7 @@ const linkList: [LinkProps, LinkProps, LinkProps, LinkProps] = [
       height: 27,
     },
     text: '初めての方へ',
-    textSize: '[10px]',
+    textSize: 'xxs',
   },
   {
     path: '/price/',
@@ -52,25 +52,27 @@ const MobileHeader: React.VFC<Props> = (props) => {
   const { setIsOpen } = props;
 
   return (
-    <nav className={'sm:hidden'}>
-      <ul className={'flex'}>
-        {linkList.map((link) => {
-          return (
-            <li className={'w-[20%]'} key={link.path}>
-              <IconLink
-                path={link.path}
-                icon={link.icon}
-                text={link.text}
-                textSize={link.textSize}
-              />
-            </li>
-          );
-        })}
-        <li className={'w-[20%]'}>
-          <MenuButton setIsOpen={setIsOpen} />
-        </li>
-      </ul>
-    </nav>
+    <header className={'fixed top-0 left-0 z-10 w-full'}>
+      <nav>
+        <ul className={'flex'}>
+          {linkList.map((link) => {
+            return (
+              <li className={'w-[20%]'} key={link.path}>
+                <IconLink
+                  path={link.path}
+                  icon={link.icon}
+                  text={link.text}
+                  textSize={link.textSize}
+                />
+              </li>
+            );
+          })}
+          <li className={'w-[20%]'}>
+            <MenuButton setIsOpen={setIsOpen} />
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 
