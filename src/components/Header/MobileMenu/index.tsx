@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Dispatch, SetStateAction } from 'react';
 
+import { headerMenuItems } from '@/variables/headerMenuItems';
+
 type Props = {
   isOpen: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
@@ -10,40 +12,6 @@ type Props = {
 
 const MobileMenu: React.VFC<Props> = (props) => {
   const { isOpen, setIsOpen } = props;
-  const linkList = [
-    {
-      path: '/',
-      text: 'ホーム',
-    },
-    {
-      path: '/beginner/',
-      text: '初めての方へ',
-    },
-    {
-      path: '/price/',
-      text: '料金',
-    },
-    {
-      path: '/about/',
-      text: '当院について',
-    },
-    {
-      path: '/voices',
-      text: 'お客様の声',
-    },
-    {
-      path: '/knowledge/',
-      text: '頭痛・肩こりの豆知識',
-    },
-    {
-      path: '/access/',
-      text: 'アクセス',
-    },
-    {
-      path: '/faq/',
-      text: 'よくあるご質問',
-    },
-  ];
 
   return (
     <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
@@ -58,10 +26,10 @@ const MobileMenu: React.VFC<Props> = (props) => {
 
           <div className={'mx-auto max-w-md'}>
             <nav className={'flex flex-col gap-y-6 items-center'}>
-              {linkList.map((link) => {
+              {headerMenuItems.map((item) => {
                 return (
-                  <Link href={link.path} key={link.text}>
-                    <a className={'text-gray100'}>{link.text}</a>
+                  <Link href={item.path} key={item.text}>
+                    <a className={'text-gray100'}>{item.text}</a>
                   </Link>
                 );
               })}
