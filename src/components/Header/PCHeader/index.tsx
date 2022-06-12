@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import Logo from '@/components/Header/PCHeader/Logo';
 import { headerMenuItems } from '@/variables/headerMenuItems';
 
-const PCHeader: React.VFC = () => {
+const PCHeader = () => {
   const router = useRouter();
 
   return (

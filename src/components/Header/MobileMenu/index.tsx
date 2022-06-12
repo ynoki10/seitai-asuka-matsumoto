@@ -10,7 +10,7 @@ type Props = {
   setIsOpen: Dispatch<SetStateAction<boolean>>;
 };
 
-const MobileMenu: React.VFC<Props> = (props) => {
+const MobileMenu = (props: Props) => {
   const { isOpen, setIsOpen } = props;
 
   return (

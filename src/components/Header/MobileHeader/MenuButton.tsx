@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import { Dispatch, SetStateAction } from 'react';
 
-type MenuProps = {
+type Props = {
   setIsOpen: Dispatch<SetStateAction<boolean>>;
 };
 
-const MenuButton: React.VFC<MenuProps> = (props) => {
+const MenuButton = (props: Props) => {
   const { setIsOpen } = props;
   return (
     <button

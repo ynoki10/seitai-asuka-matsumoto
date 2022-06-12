@@ -12,7 +12,7 @@ type Props = {
   textSize?: 'xs' | 'xxs';
 };
 
-const IconLink: React.VFC<Props> = (props) => {
+const IconLink = (props: Props) => {
   const { path, icon, text, textSize = 'xs' } = props;
   return (
     <Link href={path}>

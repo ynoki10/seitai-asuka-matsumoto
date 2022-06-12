@@ -4,7 +4,7 @@ import MobileHeader from '@/components/Header/MobileHeader';
 import MobileMenu from '@/components/Header/MobileMenu';
 import PCHeader from '@/components/Header/PCHeader';
 
-const Header: React.VFC = () => {
+const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (

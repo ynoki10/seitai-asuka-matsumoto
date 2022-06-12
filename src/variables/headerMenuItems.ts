@@ -1,4 +1,9 @@
-export const headerMenuItems = [
+type MenuItem = Readonly<{
+  path: string,
+  text: string,
+}>
+
+export const headerMenuItems: readonly MenuItem[] = [
   {
     path: '/',
     text: 'ホーム',

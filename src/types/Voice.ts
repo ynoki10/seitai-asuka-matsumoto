@@ -1,8 +1,8 @@
 export type Voices = {
-  contents: Voice[];
+  contents: readonly Voice[];
 };
 
-export type Voice = {
+export type Voice = Readonly<{
   id: string;
   createdAt: string;
   updatedAt: string;
@@ -11,17 +11,17 @@ export type Voice = {
   title: string;
   body: string;
   customerInfo: CustomerInfo;
-  image: {
+  image: Readonly<{
     url: string;
     height: number;
     width: number;
-  };
+  }>;
   tag: string;
-};
+}>;
 
-type CustomerInfo = {
+type CustomerInfo = Readonly<{
   fieldId: 'customerInfo';
   name: string;
   age: string[];
   gender: string[];
-};
+}>;

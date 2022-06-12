@@ -5,7 +5,7 @@ type Props = {
   className?: string;
 };
 
-const Logo: React.VFC<Props> = (props) => {
+const Logo = (props: Props) => {
   const { as: CustomTag = 'p', className = '' } = props;
   return (
     <CustomTag className={className}>

@@ -48,7 +48,7 @@ const linkList: [LinkProps, LinkProps, LinkProps, LinkProps] = [
   },
 ];
 
-const MobileHeader: React.VFC<Props> = (props) => {
+const MobileHeader = (props: Props) => {
   const { setIsOpen } = props;
 
   return (
