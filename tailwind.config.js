@@ -30,6 +30,9 @@ module.exports = {
       fontSize: {
         xxs: '.625rem',
       },
+      lineHeight: {
+        'relaxed': '1.8',
+      },
     },
   },
   plugins: [],
