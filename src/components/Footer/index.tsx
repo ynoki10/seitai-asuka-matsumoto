@@ -51,7 +51,7 @@ const Footer = () => {
             <div className={'shrink-0 md:max-w-[330px] lg:max-w-[400px]'}>
               <div className={'mx-auto max-w-[225px] md:mx-0 md:max-w-[280px]'}>
                 <Link href="/">
-                  <a>
+                  <a className={'hover:opacity-75 transition-opacity duration-300'}>
                     <Image
                       src={'/assets/images/logo-txt-white.svg'}
                       alt="慢性頭痛・肩こり専門 整体院あす香"
@@ -79,7 +79,7 @@ const Footer = () => {
                 <a
                   href="tel:070-1586-4141"
                   className={
-                    'flex gap-x-2 justify-center items-center py-1.5 mt-2 bg-accent rounded-md'
+                    'flex gap-x-2 justify-center items-center py-1.5 mt-2 bg-accent rounded-md hover:brightness-105 transition-all duration-300'
                   }
                 >
                   <Image src="/assets/images/ico-tel-white.svg" alt="" width="30" height="30" />
@@ -88,7 +88,7 @@ const Footer = () => {
                 <Link href={'/contact'}>
                   <a
                     className={
-                      'flex gap-x-2 justify-center items-center py-1.5 mt-3 text-white bg-green01 rounded-md'
+                      'flex gap-x-2 justify-center items-center py-1.5 mt-3 text-white bg-green01 rounded-md hover:brightness-105 transition-all duration-300'
                     }
                   >
                     <Image src="/assets/images/ico-mail.svg" alt="" width={24} height={19} />
@@ -132,7 +132,11 @@ const Footer = () => {
                 {footerMenuItems.map((item) => {
                   return (
                     <Link href={item.path} key={item.text}>
-                      <a className={'font-normal md:mr-[1.5em] md:text-sm lg:text-base'}>
+                      <a
+                        className={
+                          'font-normal hover:opacity-75 transition-opacity duration-300 md:mr-[1.5em] md:text-sm lg:text-base'
+                        }
+                      >
                         {item.text}
                       </a>
                     </Link>

@@ -15,7 +15,11 @@ const PCHeader = () => {
         <Inner>
           <div className={'justify-between items-center lg:flex'}>
             <Link href="/">
-              <a className={'block mx-auto w-fit lg:mx-0'}>
+              <a
+                className={
+                  'block mx-auto w-fit hover:opacity-75 transition-opacity duration-300 lg:mx-0'
+                }
+              >
                 <Logo as={router.pathname === '/' ? 'h1' : 'p'} className={'inline-block'} />
               </a>
             </Link>
@@ -43,7 +47,7 @@ const PCHeader = () => {
               <Link href="/contact/">
                 <a
                   className={
-                    'flex shrink-0 justify-center items-center py-2 px-8  ml-6 max-w-[200px] text-white bg-green03 rounded-full'
+                    'flex shrink-0 justify-center items-center py-2 px-8  ml-6 max-w-[200px] text-white bg-green03 rounded-full hover:opacity-75 transition-opacity duration-300'
                   }
                 >
                   <Image src="/assets/images/ico-mail.svg" alt="" width={20} height={15} />
@@ -56,7 +60,13 @@ const PCHeader = () => {
             {headerMenuItems.map((item) => {
               return (
                 <Link href={item.path} key={item.path}>
-                  <a className={'text-sm lg:text-base'}>{item.text}</a>
+                  <a
+                    className={
+                      'after:block relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] text-sm after:content-[""] after:bg-green03 after:rounded-full after:transition-transform after:duration-500 after:scale-x-0 hover:after:scale-x-100 after:origin-right hover:after:origin-left lg:text-base'
+                    }
+                  >
+                    {item.text}
+                  </a>
                 </Link>
               );
             })}
