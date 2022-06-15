@@ -37,3 +37,5 @@ export const headerMenuItems: readonly MenuItem[] = [
     text: 'よくあるご質問',
   },
 ];
+
+export const mobileHeaderHeight = '64px';

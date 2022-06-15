@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Dispatch, Fragment, SetStateAction } from 'react';
 
-import { headerMenuItems } from '@/variables/headerMenuItems';
+import { headerMenuItems } from '@/variables/headerVars';
 
 type Props = {
   isOpen: boolean;

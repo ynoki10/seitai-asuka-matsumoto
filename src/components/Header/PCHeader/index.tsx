@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 import Logo from '@/components/Header/PCHeader/Logo';
 import Inner from '@/components/Inner';
-import { headerMenuItems } from '@/variables/headerMenuItems';
+import { headerMenuItems } from '@/variables/headerVars';
 
 const PCHeader = () => {
   const router = useRouter();

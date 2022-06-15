@@ -9,7 +9,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <div className={'flex flex-col min-h-screen'}>
         <Header />
-        <Component {...pageProps} />
+        <main className={`pt-[var(--mobile-header-height)] md:pt-0`}>
+          <Component {...pageProps} />
+        </main>
         <div className={'mt-auto'}>
           <Footer />
         </div>
