@@ -10,6 +10,7 @@ module.exports = {
         green03: '#629460',
         green04: '#7FB069',
         green05: '#6BAA75',
+        pale: '#F1F5E5',
         pale01: '#BBD8C8',
         pale02: '#C7DFCD',
         pale03: '#D0DFCC',
@@ -31,7 +32,7 @@ module.exports = {
         xxs: '.625rem',
       },
       lineHeight: {
-        'relaxed': '1.8',
+        relaxed: '1.8',
       },
     },
   },

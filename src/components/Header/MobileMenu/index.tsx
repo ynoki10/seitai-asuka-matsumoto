@@ -25,7 +25,7 @@ const MobileMenu = (props: Props) => {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className={'fixed inset-0 z-20 bg-white'}>
+          <div className={'fixed inset-0 z-[var(--z-index-mobile-menu)] bg-white'}>
             <Dialog.Panel
               className={'overflow-x-hidden overflow-y-auto relative py-16 px-5 w-full h-full'}
             >

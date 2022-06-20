@@ -13,6 +13,8 @@ export default function Document() {
         <style>
           {`:root {
             --mobile-header-height: ${mobileHeaderHeight};
+            --z-index-mobile-header: 100;
+            --z-index-mobile-menu: 200;
           }`}
         </style>
       </Head>

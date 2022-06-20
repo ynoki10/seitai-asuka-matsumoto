@@ -52,7 +52,7 @@ const MobileHeader = (props: Props) => {
   const { setIsOpen } = props;
 
   return (
-    <header className={`fixed top-0 left-0 z-10 w-full h-[var(--mobile-header-height)]`}>
+    <header className={`fixed top-0 left-0 z-[var(--z-index-mobile-header)] w-full h-[var(--mobile-header-height)]`}>
       <nav>
         <ul className={'flex'}>
           {linkList.map((link) => {
