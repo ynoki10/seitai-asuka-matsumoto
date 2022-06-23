@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .heading01-after-bg {
+    --green03: theme('colors.green03');
+    --accent: theme('colors.accent');
+    background: linear-gradient(
+      90deg,
+      var(--green03) 0%,
+      var(--green03) 50%,
+      var(--accent) 50%,
+      var(--accent) 100%
+    );
+  }
+
+  .heading03-after-bg {
+    --green03: theme('colors.green03');
+    --accent: theme('colors.accent');
+    background: linear-gradient(
+      90deg,
+      var(--accent) 0%,
+      var(--accent) 20%,
+      var(--green03) 20%,
+      var(--green03) 100%
+    );
+  }
+}
