@@ -34,6 +34,9 @@ module.exports = {
       lineHeight: {
         relaxed: '1.8',
       },
+      maxWidth: {
+        '3xl': '50rem',
+      },
     },
   },
   plugins: [],

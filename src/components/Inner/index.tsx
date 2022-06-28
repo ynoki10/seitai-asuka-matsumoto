@@ -3,13 +3,20 @@ import { ReactNode } from 'react';
 type Props = {
   children: ReactNode;
   className?: string;
+  size?: 'normal' | 'lg';
 };
 
 const Inner = (props: Props) => {
-  const { children, className = '' } = props;
+  const { children, className = '', size = 'normal' } = props;
   return (
     <>
-      <div className={`px-5 mx-auto max-w-7xl lg:px-10 ${className}`}>{children}</div>
+      <div
+        className={`px-[clamp(20px,3.125vw,40px)] mx-auto box-content ${
+          size === 'normal' ? 'max-w-3xl' : 'max-w-7xl'
+        } ${className}`}
+      >
+        {children}
+      </div>
     </>
   );
 };

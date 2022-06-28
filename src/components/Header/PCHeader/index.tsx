@@ -12,7 +12,7 @@ const PCHeader = () => {
   return (
     <>
       <header className={'pt-4'}>
-        <Inner>
+        <Inner size="lg">
           <div className={'justify-between items-center lg:flex'}>
             <Link href="/">
               <a

@@ -26,4 +26,10 @@
       var(--green03) 100%
     );
   }
+
+  .card-grid-template {
+    grid-template:
+      'ttl ttl ttl' auto
+      'img body body' auto / 26% auto auto;
+  }
 }

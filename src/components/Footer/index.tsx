@@ -46,7 +46,7 @@ const Footer = () => {
   return (
     <>
       <footer className={'py-10 mt-[100px] text-white bg-green03 md:pt-16'}>
-        <Inner className={'md:relative'}>
+        <Inner className={'md:relative'} size="lg">
           <div className={'md:flex md:gap-x-16'}>
             <div className={'shrink-0 md:max-w-[330px] lg:max-w-[400px]'}>
               <div className={'mx-auto max-w-[225px] md:mx-0 md:max-w-[280px]'}>
