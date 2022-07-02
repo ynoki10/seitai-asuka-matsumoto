@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 
+import ButtonWithIcon from '@/components/ButtonWithIcon';
 import Card from '@/components/Card';
 import Container from '@/components/Container';
 import Heading02 from '@/components/Heading/Heading02';
@@ -192,7 +193,14 @@ const HomePage: NextPage = () => {
               );
             })}
           </ol>
-          <div className={`flex flex-col gap-y-4 mt-10`}></div>
+          <div className={`flex flex-col gap-y-4 mt-10 md:flex-row md:gap-x-6`}>
+            <ButtonWithIcon tag="a" linkProps={{ href: '/about'}} className="md:w-full">
+              当院について
+            </ButtonWithIcon>
+            <ButtonWithIcon tag="a" linkProps={{ href: '/therapy'}} className="md:w-full">
+              施術の流れについて
+            </ButtonWithIcon>
+          </div>
         </Inner>
       </Container>
     </>
