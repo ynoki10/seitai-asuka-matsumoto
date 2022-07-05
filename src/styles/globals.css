@@ -27,9 +27,27 @@
     );
   }
 
+  .deco-bg {
+    --green03: theme('colors.green03');
+    --accent: theme('colors.accent');
+    background: linear-gradient(
+      90deg,
+      var(--green03) 0%,
+      var(--green03) 50%,
+      var(--accent) 50%,
+      var(--accent) 100%
+    );
+  }
+
   .card-grid-template {
     grid-template:
       'ttl ttl ttl' auto
       'img body body' auto / 26% auto auto;
+  }
+
+  .top-message-grid-template {
+    grid-template:
+      'message message' auto
+      'img info' auto / 42.5% 57.5%
   }
 }
