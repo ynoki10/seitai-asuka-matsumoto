@@ -17,6 +17,7 @@ import type { NextPage } from 'next';
 const HomePage: NextPage = () => {
   return (
     <>
+      {/* MV */}
       <Inner size="lg">
         <p className={'mt-4 text-center md:hidden'}>
           <Image
@@ -28,6 +29,8 @@ const HomePage: NextPage = () => {
         </p>
         <MVSlider />
       </Inner>
+
+      {/* Intro */}
       <Container className={`mt-20 md:mt-24 bg-pale`} as="section">
         <Inner>
           <div className={'relative'}>
@@ -53,6 +56,8 @@ const HomePage: NextPage = () => {
           </div>
         </Inner>
       </Container>
+
+      {/* お悩み */}
       <Container as="section">
         <Inner>
           <Heading02 as="h2">こんなことでお悩みではありませんか？ </Heading02>
@@ -145,6 +150,8 @@ const HomePage: NextPage = () => {
           </div>
         </Inner>
       </Container>
+
+      {/* 5つのポイント */}
       <Container className={`bg-pale`} as="section">
         <Inner>
           <div className={`text-center`}>
@@ -207,6 +214,8 @@ const HomePage: NextPage = () => {
           </div>
         </Inner>
       </Container>
+
+      {/* 初めてのお客さま */}
       <Container as="section">
         <Inner>
           <Heading02 as="h2">初めてのお客さま限定！</Heading02>
@@ -227,6 +236,8 @@ const HomePage: NextPage = () => {
           </div>
         </Inner>
       </Container>
+
+      {/* ごあいさつ */}
       <Container className={`bg-pale`} as="section">
         <Inner>
           <Heading01 as="h2">院長ごあいさつ</Heading01>
@@ -285,11 +296,13 @@ const HomePage: NextPage = () => {
           </div>
         </Inner>
       </Container>
+
+      {/* 新聞記事 */}
       <Container as="section">
         <Inner>
           <Heading02 as="h2">MGプレス(信濃毎日新聞)に特集記事が掲載されました！</Heading02>
           <div className={`mt-4 md:flex md:items-center md:justify-center md:gap-x-6 lg:gap-x-10`}>
-            <div className={`md:max-w-[280px]`}>
+            <div className={`w-full md:max-w-[280px]`}>
               <Image
                 src="/assets/images/newspaper.jpg"
                 alt=""
@@ -305,6 +318,8 @@ const HomePage: NextPage = () => {
           </div>
         </Inner>
       </Container>
+
+      {/* お客さまの声 */}
       <Container className={`bg-pale`} as="section">
         <Inner>
           <Heading01 as="h2">お客さまの声</Heading01>
@@ -359,6 +374,8 @@ const HomePage: NextPage = () => {
           </div>
         </Inner>
       </Container>
+
+      {/* 施術の特徴 */}
       <Container as="section">
         <Inner>
           <Heading01 as="h2">当院の施術の特徴</Heading01>
