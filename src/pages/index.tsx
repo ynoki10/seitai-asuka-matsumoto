@@ -353,9 +353,31 @@ const HomePage: NextPage = () => {
             他にもたくさんのお客さまから喜びの声をいただいています！
           </p>
           <div className={`mt-6 md:mt-8 md:max-w-[50%] md:mx-auto`}>
-            <ButtonWithIcon tag="a" linkProps={{ href: '/price' }}>
-              料金について
+            <ButtonWithIcon tag="a" linkProps={{ href: '/voices/' }}>
+              お客さまの声
             </ButtonWithIcon>
+          </div>
+        </Inner>
+      </Container>
+      <Container as="section">
+        <Inner>
+          <Heading01 as="h2">当院の施術の特徴</Heading01>
+          <div
+            className={`mt-4 md:mt-8 flex flex-col gap-y-4 md:flex-row md:items-center md:justify-between`}
+          >
+            <p className={`md:w-1/2`}>
+              当院では「筋膜リリース」と「セロトニン活性療法」という考えに基づいた施術を行っています。科学的に立証されたこれらの手法によって、あなたの頭痛や肩こりの根本原因にアプローチしていきます。
+              <br />
+              頭痛・肩こりについて詳しく知りたい方のために、それぞれの原因と当院の施術について解説をご用意しました。よろしければぜひご覧ください。
+            </p>
+            <div className={`flex flex-col gap-y-4 md:w-[45%]`}>
+              <ButtonWithIcon tag="a" linkProps={{ href: '/knowledge/headache/' }}>
+                頭痛の豆知識
+              </ButtonWithIcon>
+              <ButtonWithIcon tag="a" linkProps={{ href: '/knowledge/shoulder/' }}>
+                肩こりの豆知識
+              </ButtonWithIcon>
+            </div>
           </div>
         </Inner>
       </Container>
