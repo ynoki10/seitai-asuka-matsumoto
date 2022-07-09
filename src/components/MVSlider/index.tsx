@@ -30,8 +30,6 @@ const MVSlider = () => {
                   <Image
                     src={`/assets/images/mv_sp${el}.jpg`}
                     alt=""
-                    width={728}
-                    height={400}
                     quality={100}
                     layout="fill"
                     objectFit="cover"
@@ -43,8 +41,6 @@ const MVSlider = () => {
                   <Image
                     src={`/assets/images/mv_pc${el}.jpg`}
                     alt=""
-                    width={1200}
-                    height={480}
                     quality={100}
                     layout="fill"
                     objectFit="cover"
