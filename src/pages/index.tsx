@@ -10,6 +10,7 @@ import Heading01 from '@/components/Heading/Heading01';
 import Heading02 from '@/components/Heading/Heading02';
 import Inner from '@/components/Inner';
 import MVSlider from '@/components/MVSlider';
+import VoiceCard from '@/components/VoiceCard';
 
 import type { NextPage } from 'next';
 
@@ -214,7 +215,7 @@ const HomePage: NextPage = () => {
               <p>
                 当院では頭痛や肩こりでお悩みの方に適切な対処法を知ってもらいたいという思いから、初回に限りお試し料金での施術を行っております。また、お得な回数券もご用意しております。
               </p>
-              <ButtonWithIcon tag="a" linkProps={{ href: '/price</div>' }} className="mt-4">
+              <ButtonWithIcon tag="a" linkProps={{ href: '/price/' }} className="mt-4">
                 料金について
               </ButtonWithIcon>
             </div>
@@ -281,6 +282,80 @@ const HomePage: NextPage = () => {
                 })}
               </ul>
             </div>
+          </div>
+        </Inner>
+      </Container>
+      <Container as="section">
+        <Inner>
+          <Heading02 as="h2">MGプレス(信濃毎日新聞)に特集記事が掲載されました！</Heading02>
+          <div className={`mt-4 md:flex md:items-center md:justify-center md:gap-x-6 lg:gap-x-10`}>
+            <div className={`md:max-w-[280px]`}>
+              <Image
+                src="/assets/images/newspaper.jpg"
+                alt=""
+                width={335}
+                height={251}
+                layout="responsive"
+                quality={90}
+              />
+            </div>
+            <p className={`mt-4 md:mt-0 md:max-w-[320px]`}>
+              慢性頭痛を予防するための日々のセルフケアや、頭痛の予防体操について紹介させていただきました。
+            </p>
+          </div>
+        </Inner>
+      </Container>
+      <Container className={`bg-pale`} as="section">
+        <Inner>
+          <Heading01 as="h2">お客さまの声</Heading01>
+          <div className={`flex flex-col gap-y-10 mt-6`}>
+            <VoiceCard
+              title="痛みが和らぎよく眠れるように！"
+              body="20年来の頭痛と肩コリでしたが今までにない感覚で⾸と肩の硬さがほどけていく感じで驚きました。痛みが和らぎ⽬の前がスッキリ！セロトニンのことを初めて知り納得！よく眠れるようになったのが嬉しいです。"
+              info="Mさん(40代女性)"
+              img={{
+                src: '/assets/images/voice01.jpg',
+                alt: '',
+                width: 303,
+                height: 303,
+                quality: 90,
+                layout: 'responsive',
+              }}
+            />
+            <VoiceCard
+              title="つらい日々から卒業！"
+              body="病院で検査しても「異常なし」で薬に頼るしかなくつらい⽇々でした。施術はソフトで安⼼できました。初回からその場での痛みが和らぎ、3回⽬頃からは頭痛の回数や⾟さが減ってきました。セロトニンのセルフケアも続けています。やっと頭痛から卒業できそうです！"
+              info="Sさん(20代女性)"
+              img={{
+                src: '/assets/images/voice02.jpg',
+                alt: '',
+                width: 303,
+                height: 303,
+                quality: 90,
+                layout: 'responsive',
+              }}
+            />
+            <VoiceCard
+              title="つらかった首肩が楽に！"
+              body="部活を引退して運動しなくなってから頭痛がひどくなりました。体全体のバランスも見てもらい、つらかった首や肩が柔らかくなって、頭痛も楽になりました。これから受験勉強もがんばれそうです！"
+              info="Aさん(10代女性)"
+              img={{
+                src: '/assets/images/voice03.jpg',
+                alt: '',
+                width: 303,
+                height: 303,
+                quality: 90,
+                layout: 'responsive',
+              }}
+            />
+          </div>
+          <p className={`mt-6 md:mt-8 text-[16px] md:text-[20px] md:text-center`}>
+            他にもたくさんのお客さまから喜びの声をいただいています！
+          </p>
+          <div className={`mt-6 md:mt-8 md:max-w-[50%] md:mx-auto`}>
+            <ButtonWithIcon tag="a" linkProps={{ href: '/price' }}>
+              料金について
+            </ButtonWithIcon>
           </div>
         </Inner>
       </Container>
