@@ -43,7 +43,7 @@ const ButtonWithIcon = forwardRef<Element, ButtonProps<Tag>>((props, ref) => {
   }
 
   const buttonClassName =
-    'bg-green04 rounded-md text-center text-white text-[18px] tracking-widest leading-normal py-2.5 px-4 font-normal flex items-center';
+    'bg-green04 rounded-md text-center text-white text-[18px] tracking-widest leading-normal py-2.5 px-4 font-normal flex items-center hover:opacity-75 transition-opacity duration-300';
 
   if (props.tag === 'a') {
     const { tag, linkProps, className, ...otherProps } = props;
