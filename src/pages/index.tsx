@@ -11,10 +11,16 @@ import Heading02 from '@/components/Heading/Heading02';
 import Inner from '@/components/Inner';
 import MVSlider from '@/components/MVSlider';
 import VoiceCard from '@/components/VoiceCard';
+import { client } from '@/libs/client';
 
+import type { Voices } from '@/types/Voice';
 import type { NextPage } from 'next';
 
-const HomePage: NextPage = () => {
+type Props = {
+  voices: Voices['contents'];
+};
+
+const HomePage: NextPage<Props> = ({ voices }) => {
   return (
     <>
       {/* MV */}
@@ -324,45 +330,24 @@ const HomePage: NextPage = () => {
         <Inner>
           <Heading01 as="h2">お客さまの声</Heading01>
           <div className={`flex flex-col gap-y-10 mt-6`}>
-            <VoiceCard
-              title="痛みが和らぎよく眠れるように！"
-              body="20年来の頭痛と肩コリでしたが今までにない感覚で⾸と肩の硬さがほどけていく感じで驚きました。痛みが和らぎ⽬の前がスッキリ！セロトニンのことを初めて知り納得！よく眠れるようになったのが嬉しいです。"
-              info="Mさん(40代女性)"
-              img={{
-                src: '/assets/images/voice01.jpg',
-                alt: '',
-                width: 303,
-                height: 303,
-                quality: 90,
-                layout: 'responsive',
-              }}
-            />
-            <VoiceCard
-              title="つらい日々から卒業！"
-              body="病院で検査しても「異常なし」で薬に頼るしかなくつらい⽇々でした。施術はソフトで安⼼できました。初回からその場での痛みが和らぎ、3回⽬頃からは頭痛の回数や⾟さが減ってきました。セロトニンのセルフケアも続けています。やっと頭痛から卒業できそうです！"
-              info="Sさん(20代女性)"
-              img={{
-                src: '/assets/images/voice02.jpg',
-                alt: '',
-                width: 303,
-                height: 303,
-                quality: 90,
-                layout: 'responsive',
-              }}
-            />
-            <VoiceCard
-              title="つらかった首肩が楽に！"
-              body="部活を引退して運動しなくなってから頭痛がひどくなりました。体全体のバランスも見てもらい、つらかった首や肩が柔らかくなって、頭痛も楽になりました。これから受験勉強もがんばれそうです！"
-              info="Aさん(10代女性)"
-              img={{
-                src: '/assets/images/voice03.jpg',
-                alt: '',
-                width: 303,
-                height: 303,
-                quality: 90,
-                layout: 'responsive',
-              }}
-            />
+            {voices.map((voice) => {
+              return (
+                <VoiceCard
+                  key={voice.id}
+                  title={voice.title}
+                  body={voice.body}
+                  info={`${voice.customerInfo.name}さん(${voice.customerInfo.age}${voice.customerInfo.gender})`}
+                  img={{
+                    src: voice.image.url,
+                    alt: '',
+                    width: voice.image.width,
+                    height: voice.image.height,
+                    quality: 100,
+                    layout: 'responsive',
+                  }}
+                />
+              );
+            })}
           </div>
           <p className={`mt-6 md:mt-8 text-[16px] md:text-[20px] md:text-center`}>
             他にもたくさんのお客さまから喜びの声をいただいています！
@@ -400,6 +385,18 @@ const HomePage: NextPage = () => {
       </Container>
     </>
   );
+};
+
+export const getStaticProps = async () => {
+  const data: Voices = await client.get({ endpoint: 'voices' });
+  const voicesAll = data.contents;
+  const voicesTop = voicesAll.filter((voice) => voice.showTopPage);
+
+  return {
+    props: {
+      voices: voicesTop,
+    },
+  };
 };
 
 export default HomePage;

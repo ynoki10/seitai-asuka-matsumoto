@@ -1,13 +1,13 @@
-import Image from 'next/image';
 import React, { ComponentPropsWithoutRef } from 'react';
 
 import Heading03 from '@/components/Heading/Heading03';
+import MicroCMSImage from '@/components/microCMSImage';
 
 type Props = {
   title: string;
   body: string;
   info: string;
-  img: ComponentPropsWithoutRef<typeof Image>;
+  img: ComponentPropsWithoutRef<typeof MicroCMSImage>;
   className?: string;
   as?: React.ElementType;
 };
@@ -21,7 +21,9 @@ const VoiceCard = (props: Props) => {
       <Heading03 as="h3" className="md:[grid-area:ttl]">
         {title}
       </Heading03>
-      <Image alt={img.alt || ''} {...img} className="md:[grid-area:img]" />
+      <div className="md:[grid-area:img]">
+        <MicroCMSImage {...img} />
+      </div>
       <div className={`md:[grid-area:body] md:self-center`}>
         <p className="">{body}</p>
         <p className={`text-right mt-2`}>{info}</p>

@@ -16,12 +16,12 @@ export type Voice = Readonly<{
     height: number;
     width: number;
   }>;
-  tag: string;
+  showTopPage: boolean;
 }>;
 
 type CustomerInfo = Readonly<{
   fieldId: 'customerInfo';
   name: string;
-  age: string[];
-  gender: string[];
+  age: string;
+  gender: string;
 }>;
