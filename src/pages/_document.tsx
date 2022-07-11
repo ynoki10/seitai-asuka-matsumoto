@@ -6,6 +6,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        <meta name="robots" content="noindex , nofollow" />
         <link
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500&display=swap"
           rel="stylesheet"
