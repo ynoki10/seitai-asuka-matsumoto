@@ -154,6 +154,19 @@ const HomePage: NextPage<Props> = ({ voices }) => {
               </span>
             </p>
           </div>
+          <div className={`text-center mt-6 md:mt-16`}>
+            <Link href="/price">
+              <a className={`hover:opacity-75 transition-opacity`}>
+                <Image
+                  src={'/assets/images/price-bnr.png'}
+                  alt="初めてのお客様はお試し料金！ 2980円"
+                  width={400}
+                  height={140}
+                  quality={100}
+                />
+              </a>
+            </Link>
+          </div>
         </Inner>
       </Container>
 
@@ -234,9 +247,17 @@ const HomePage: NextPage<Props> = ({ voices }) => {
                 料金について
               </ButtonWithIcon>
             </div>
-            <div className={`md:w-full`}>
+            <div className={`text-center md:w-full`}>
               <Link href="/price">
-                <a>初めての方はお試し料金</a>
+                <a className={`hover:opacity-75 transition-opacity`}>
+                  <Image
+                    src={'/assets/images/price-bnr.png'}
+                    alt="初めてのお客様はお試し料金！ 2980円"
+                    width={400}
+                    height={140}
+                    quality={100}
+                  />
+                </a>
               </Link>
             </div>
           </div>
