@@ -42,6 +42,8 @@ const MVSlider = () => {
                     src={`/assets/images/mv_pc${el}.jpg`}
                     alt=""
                     quality={100}
+                    priority={true}
+                    loading={'eager'}
                     layout="fill"
                     objectFit="cover"
                     className={`rounded-2xl overflow-hidden`}
