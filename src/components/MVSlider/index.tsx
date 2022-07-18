@@ -23,13 +23,15 @@ const MVSlider = () => {
           }}
           className={`mt-4 md:mt-0`}
         >
-          {['01', '02', '03', '04'].map((el) => {
+          {['01', '02', '03', '04'].map((el, i) => {
             return (
               <SwiperSlide key={el}>
                 <div className={`md:hidden h-[400px]`}>
                   <Image
                     src={`/assets/images/mv_sp${el}.jpg`}
                     alt=""
+                    priority={i === 0}
+                    loading={i === 0 ? 'eager' : 'lazy'}
                     quality={100}
                     layout="fill"
                     objectFit="cover"
@@ -42,8 +44,8 @@ const MVSlider = () => {
                     src={`/assets/images/mv_pc${el}.jpg`}
                     alt=""
                     quality={100}
-                    priority={true}
-                    loading={'eager'}
+                    priority={i === 0}
+                    loading={i === 0 ? 'eager' : 'lazy'}
                     layout="fill"
                     objectFit="cover"
                     className={`rounded-2xl overflow-hidden`}
