@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import React, { ComponentPropsWithoutRef } from 'react';
+import React, { ComponentPropsWithoutRef, ReactNode } from 'react';
 
 import Heading03 from '@/components/Heading/Heading03';
 
 type Props = {
-  title: string;
-  body: string;
+  title: ReactNode;
+  body: ReactNode;
   img: ComponentPropsWithoutRef<typeof Image>;
   className?: string;
   as?: React.ElementType;

@@ -1,5 +1,7 @@
+import { ReactNode } from 'react';
+
 type Props = {
-  children: string;
+  children: ReactNode;
   className?: string;
   as: React.ElementType;
 };
