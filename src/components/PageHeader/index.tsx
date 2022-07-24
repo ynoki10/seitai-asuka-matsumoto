@@ -41,7 +41,7 @@ const PageHeader = (props: Props) => {
       </div>
       <h1
         className={
-          'inline-block relative py-1.5 px-6 font-maru text-[18px] font-bold text-white bg-green03/75 rounded md:py-3 md:px-8 md:text-[24px] md:rounded-lg'
+          'inline-block relative py-1.5 px-6 font-maru text-[18px] font-bold tracking-widest text-white bg-green03/75 rounded md:py-3 md:px-8 md:text-[24px] md:rounded-lg'
         }
       >
         {title}
