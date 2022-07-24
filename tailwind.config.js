@@ -18,6 +18,7 @@ module.exports = {
         pale04: '#D9E7CF',
         pale05: '#D3E5D2',
         accent: '#E8AA14',
+        accent_65: 'rgba(232,170,20,0.65)',
         gray100: '#4d4d4d',
         gray80: '#808080',
         gray60: '#b3b3b3',

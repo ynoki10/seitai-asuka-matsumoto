@@ -48,6 +48,10 @@
   .top-message-grid-template {
     grid-template:
       'message message' auto
-      'img info' auto / 42.5% 57.5%
+      'img info' auto / 42.5% 57.5%;
+  }
+
+  .marker {
+    background: linear-gradient(transparent 70%, theme('colors.accent_65') 70%);
   }
 }

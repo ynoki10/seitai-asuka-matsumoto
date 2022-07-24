@@ -75,22 +75,37 @@ const HomePage: NextPage = () => {
           <ul>
             <li className={`mt-8 md:mt-10`}>
               <h3 className={`text-center text-[16px] leading-none md:text-[22px]`}>3回回数券</h3>
-              <p className={`mt-2 text-center text-green03 font-bold text-[30px] md:text-[48px] leading-none`}>
+              <p
+                className={`mt-2 text-center text-green03 font-bold text-[30px] md:text-[48px] leading-none`}
+              >
                 19,500<span className={`text-[16px] md:text-[20px]`}>円</span>
               </p>
               <p className={`mt-3 text-center`}>
-                一回あたりの施術料金が<s>7,000円</s> → 6,500円となります。<br/>
-                通常施術料金より合計1,500円お得です。
+                一回あたりの施術料金が
+                <span className={`marker`}>
+                  <s>7,000円</s> → 6,500円
+                </span>
+                となります。
+                <br />
+                通常施術料金より合計<span className={`marker`}>1,500円お得</span>です。
               </p>
             </li>
             <li className={`mt-8 md:mt-10`}>
               <h3 className={`text-center text-[16px] leading-none md:text-[22px]`}>5回回数券</h3>
-              <p className={`mt-2 text-center text-green03 font-bold text-[30px] md:text-[48px] leading-none`}>
+              <p
+                className={`mt-2 text-center text-green03 font-bold text-[30px] md:text-[48px] leading-none`}
+              >
                 30,000<span className={`text-[16px] md:text-[20px]`}>円</span>
               </p>
               <p className={`mt-3 text-center`}>
-                一回あたりの施術料金が<s>7,000円</s> → 6,000円となります。<br/>
-                通常施術料金より合計5,000円お得です。
+                一回あたりの施術料金が
+                <span className={`marker`}>
+                  <s>7,000円</s> → 6,000円
+                </span>
+                となります。
+                <br />
+                通常施術料金より合計
+                <span className={`marker`}>5,000円お得</span>です。
               </p>
             </li>
           </ul>
