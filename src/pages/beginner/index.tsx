@@ -9,7 +9,7 @@ import PageHeader from '@/components/PageHeader';
 
 import type { NextPage } from 'next';
 
-const HomePage: NextPage = () => {
+const BeginnerPage: NextPage = () => {
   return (
     <>
       <PageHeader
@@ -148,4 +148,4 @@ const HomePage: NextPage = () => {
   );
 };
 
-export default HomePage;
+export default BeginnerPage;

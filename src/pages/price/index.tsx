@@ -5,7 +5,7 @@ import PageHeader from '@/components/PageHeader';
 
 import type { NextPage } from 'next';
 
-const HomePage: NextPage = () => {
+const PricePage: NextPage = () => {
   return (
     <>
       <PageHeader
@@ -69,7 +69,7 @@ const HomePage: NextPage = () => {
       <Container as="section">
         <Inner>
           <Heading01 as="h2">回数券について</Heading01>
-          <p className={`mt-4`}>
+          <p className={`mt-4 max-w-xl mx-auto`}>
             頭痛・肩こりからの卒業には継続的な施術と日々のセルフケアが大切です。継続してご来院いただく方にはお得な回数券をご用意しています。
           </p>
           <ul>
@@ -115,4 +115,4 @@ const HomePage: NextPage = () => {
   );
 };
 
-export default HomePage;
+export default PricePage;
