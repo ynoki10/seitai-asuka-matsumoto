@@ -47,7 +47,7 @@ const AccessPage: NextPage = () => {
         <Inner>
           <Heading01 as="h2"> 営業時間</Heading01>
           <p className={`mt-4 md:mt-8 max-w-xl mx-auto text-center`}>
-            <span className={`text-[28px] md:text-[40px] leading-tight`}>10:00~19:00</span>
+            <span className={`text-[28px] md:text-[40px] leading-tight marker`}>10:00~19:00</span>
             <br />
             <span className={`text-[16px] md:text-[20px]`}>※不定休</span>
           </p>

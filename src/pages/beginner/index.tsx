@@ -76,7 +76,7 @@ const BeginnerPage: NextPage = () => {
                 body: (
                   <span>
                     お身体の症状に合わせて首肩周辺の筋硬結の原因部位を評価し、筋膜のつながりを使って緩めていきます。（
-                    <Link href={'/knowledge/fascia/'}>
+                    <Link href={'/knowledge/headache/#fascia'}>
                       <a className={`text-green03`}>筋膜について</a>
                     </Link>
                     ）
@@ -88,7 +88,7 @@ const BeginnerPage: NextPage = () => {
                 body: (
                   <span>
                     全身のポイントを使って、脳内セロトニンの分泌を促します。（
-                    <Link href={'/knowledge/serotonin/'}>
+                    <Link href={'/knowledge/headache/#serotonin'}>
                       <a className={`text-green03`}>セロトニンについて</a>
                     </Link>
                     ）
