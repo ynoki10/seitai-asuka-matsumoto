@@ -22,7 +22,9 @@ const VoiceCard = (props: Props) => {
         {title}
       </Heading03>
       <div className="md:[grid-area:img]">
-        <MicroCMSImage {...img} />
+        <div className={`max-w-xs mx-auto`}>
+          <MicroCMSImage {...img} />
+        </div>
       </div>
       <div className={`md:[grid-area:body] md:self-center`}>
         <p className="">{body}</p>

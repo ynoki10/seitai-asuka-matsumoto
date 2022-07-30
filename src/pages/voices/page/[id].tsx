@@ -7,15 +7,17 @@ import PageHeader from '@/components/PageHeader';
 import Pagination from '@/components/Pagination';
 import VoiceCard from '@/components/VoiceCard';
 import { client } from '@/libs/client';
+import { range } from '@/libs/range';
 import { PER_PAGE } from '@/variables/voicesPerPage';
 
 import type { Voice } from '@/types/Voice';
-import type { NextPage } from 'next';
+import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 
-type Props = { voices: Voice[]; totalCount: number };
+type Props = { id: number; voices: Voice[]; totalCount: number };
+type Params = { id: string };
 
-const VoicesPage: NextPage<Props> = (props) => {
-  const { voices, totalCount } = props;
+const VoicesPaginatePage: NextPage<Props> = (props) => {
+  const { id, voices, totalCount } = props;
   return (
     <>
       <PageHeader
@@ -60,7 +62,7 @@ const VoicesPage: NextPage<Props> = (props) => {
             })}
           </div>
           <div className={`mt-6 md:mt-10`}>
-            <Pagination totalCount={totalCount} currentPage={1} />
+            <Pagination totalCount={totalCount} currentPage={id} />
           </div>
         </Inner>
       </Container>
@@ -68,18 +70,38 @@ const VoicesPage: NextPage<Props> = (props) => {
   );
 };
 
-export const getStaticProps = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const data: MicroCMSListResponse<Voice> = await client.get({
     endpoint: 'voices',
-    queries: { limit: PER_PAGE, offset: 0 },
+    queries: { limit: 0 },
+  });
+
+  const paths = range(1, Math.ceil(data.totalCount / PER_PAGE)).map((pageNum) => {
+    return {
+      params: {
+        id: pageNum.toString(),
+      },
+    };
+  });
+
+  return { paths, fallback: false };
+};
+
+export const getStaticProps: GetStaticProps<Props, Params> = async ({ params }) => {
+  const id = params?.id ? params.id : '0';
+
+  const data: MicroCMSListResponse<Voice> = await client.get({
+    endpoint: 'voices',
+    queries: { limit: PER_PAGE, offset: (Number(id) - 1) * PER_PAGE },
   });
 
   return {
     props: {
+      id: Number(id),
       voices: data.contents,
       totalCount: data.totalCount,
     },
   };
 };
 
-export default VoicesPage;
+export default VoicesPaginatePage;

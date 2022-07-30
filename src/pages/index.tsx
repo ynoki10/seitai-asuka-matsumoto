@@ -1,3 +1,4 @@
+import { MicroCMSListResponse } from 'microcms-js-sdk';
 import Image from 'next/image';
 import Link from 'next/link';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
@@ -13,11 +14,11 @@ import MVSlider from '@/components/MVSlider';
 import VoiceCard from '@/components/VoiceCard';
 import { client } from '@/libs/client';
 
-import type { Voices } from '@/types/Voice';
+import type { Voice } from '@/types/Voice';
 import type { NextPage } from 'next';
 
 type Props = {
-  voices: Voices['contents'];
+  voices: Voice[];
 };
 
 const HomePage: NextPage<Props> = ({ voices }) => {
@@ -409,13 +410,14 @@ const HomePage: NextPage<Props> = ({ voices }) => {
 };
 
 export const getStaticProps = async () => {
-  const data: Voices = await client.get({ endpoint: 'voices' });
-  const voicesAll = data.contents;
-  const voicesTop = voicesAll.filter((voice) => voice.showTopPage);
+  const data: MicroCMSListResponse<Voice> = await client.get({
+    endpoint: 'voices',
+    queries: { filters: 'showTopPage[equals]true' },
+  });
 
   return {
     props: {
-      voices: voicesTop,
+      voices: data.contents,
     },
   };
 };

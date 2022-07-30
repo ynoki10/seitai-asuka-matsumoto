@@ -1,7 +1,3 @@
-export type Voices = {
-  contents: readonly Voice[];
-};
-
 export type Voice = Readonly<{
   id: string;
   createdAt: string;
