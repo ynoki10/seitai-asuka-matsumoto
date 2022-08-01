@@ -54,4 +54,8 @@
   .marker {
     background: linear-gradient(transparent 70%, theme('colors.accent_65') 70%);
   }
+
+  .anchor {
+    @apply scroll-mt-[var(--mobile-header-height)] md:scroll-mt-0;
+  }
 }

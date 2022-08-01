@@ -30,35 +30,35 @@ const HeadachePage: NextPage = () => {
               <p className={`text-[16px] md:text-[18px]`}>目次</p>
               <ul className={`list-disc pl-6`}>
                 <li>
-                  <a href="#type" className={`text-green03`}>
-                    頭痛の種類
+                  <a href="#type">
+                    <span className={`text-green03`}>頭痛の種類</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#mechanism" className={`text-green03`}>
-                    片(偏)頭痛が起こるメカニズム
+                  <a href="#mechanism">
+                    <span className={`text-green03`}>片(偏)頭痛が起こるメカニズム</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#serotonin" className={`text-green03`}>
-                    セロトニンについて
+                  <a href="#serotonin">
+                    <span className={`text-green03`}>セロトニンについて</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#self-care" className={`text-green03`}>
-                    セロトニン活性のためのセルフケア
+                  <a href="#self-care">
+                    <span className={`text-green03`}>セロトニン活性のためのセルフケア</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#fascia" className={`text-green03`}>
-                    筋膜について
+                  <a href="#fascia">
+                    <span className={`text-green03`}>筋膜について</span>
                   </a>
                 </li>
               </ul>
             </div>
 
             {/*  頭痛の種類 */}
-            <section id="type" className={`mt-10 md:mt-16`}>
+            <section id="type" className={`pt-10 md:pt-16 anchor`}>
               <Heading02 as="h3"> 頭痛の種類</Heading02>
               <dl>
                 <div className={`mt-4 md:mt-6`}>
@@ -115,12 +115,12 @@ const HeadachePage: NextPage = () => {
               </section>
             </section>
 
-            <div className={`mt-10 md:mt-16 text-center`}>
+            <div className={`pt-10 md:pt-16 text-center`}>
               <Deco />
             </div>
 
             {/*  片(偏)頭痛が起こるメカニズム */}
-            <section id="mechanism" className={`mt-10 md:mt-16`}>
+            <section id="mechanism" className={`pt-10 md:pt-16 anchor`}>
               <Heading02 as="h3"> 片(偏)頭痛が起こるメカニズム</Heading02>
               <p className={`mt-4 md:mt-6`}>
                 現在でも片頭痛の根本原因は明らかにされていませんが、そのメカニズムは徐々に解明されてきています。現在最も有力であるのが「三叉神経血管説」とされています。
@@ -157,12 +157,12 @@ const HeadachePage: NextPage = () => {
               </div>
             </section>
 
-            <div className={`mt-10 md:mt-16 text-center`}>
+            <div className={`pt-10 md:pt-16 text-center`}>
               <Deco />
             </div>
 
             {/*  セロトニンについて */}
-            <section id="serotonin" className={`mt-10 md:mt-16`}>
+            <section id="serotonin" className={`pt-10 md:pt-16 anchor`}>
               <Heading02 as="h3"> セロトニンについて</Heading02>
               <p className={`mt-4 md:mt-6`}>
                 セロトニンとは情緒・ストレス・睡眠・覚醒・痛みの抑制・自律神経・血管・姿勢の維持などに関与する脳内物質です。正常であれば、自動的・定期的に一定量ずつ分泌され、他の脳内物質の暴走をコントロールして身体と心の安定を保ちますが、過度に不足すると様々な症状を引き起こします。
@@ -197,12 +197,12 @@ const HeadachePage: NextPage = () => {
               </section>
             </section>
 
-            <div className={`mt-10 md:mt-16 text-center`}>
+            <div className={`pt-10 md:pt-16 text-center`}>
               <Deco />
             </div>
 
             {/*  セロトニン活性のためのセルフケア */}
-            <section id="serotonin" className={`mt-10 md:mt-16`}>
+            <section id="self-care" className={`pt-10 md:pt-16 anchor`}>
               <Heading02 as="h3"> セロトニン活性のためのセルフケア</Heading02>
               <p className={`mt-4 md:mt-6`}>
                 セロトニンセルフケア（トレーニング）の刺激により、自分でセロトニン神経を鍛えられます。
@@ -258,12 +258,12 @@ const HeadachePage: NextPage = () => {
               </ol>
             </section>
 
-            <div className={`mt-10 md:mt-16 text-center`}>
+            <div className={`pt-10 md:pt-16 text-center`}>
               <Deco />
             </div>
 
             {/*  筋膜について */}
-            <section id="fascia" className={`mt-10 md:mt-16`}>
+            <section id="fascia" className={`pt-10 md:pt-16 anchor`}>
               <Heading02 as="h3"> 筋膜について</Heading02>
               <div className={`mt-4 md:mt-6 text-center`}>
                 <Image
@@ -312,11 +312,11 @@ const HeadachePage: NextPage = () => {
               </section>
             </section>
 
-            <div className={`mt-10 md:mt-16 text-center`}>
+            <div className={`pt-10 md:pt-16 text-center`}>
               <Deco />
             </div>
 
-            <div className={`mt-10 md:mt-16 text-center`}>
+            <div className={`pt-10 md:pt-16 text-center`}>
               <ButtonWithIcon
                 tag="a"
                 linkProps={{ href: '/knowledge/shoulder/' }}

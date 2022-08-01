@@ -52,7 +52,7 @@ const ShoulderPage: NextPage = () => {
             </div>
 
             {/*  実は、つらいところに原因はなかった！ */}
-            <section id="cause" className={`mt-10 md:mt-16`}>
+            <section id="cause" className={`pt-10 md:pt-16 anchor`}>
               <Heading02 as="h3"> 事実① 実は、つらいところに原因はなかった！</Heading02>
               <p className={`mt-4 md:mt-6`}>
                 肩こりの大きな原因となっているのは、「離れた場所の筋膜の硬さ」であることがほとんどです。
@@ -87,12 +87,12 @@ const ShoulderPage: NextPage = () => {
               </section>
             </section>
 
-            <div className={`mt-10 md:mt-16 text-center`}>
+            <div className={`pt-10 md:pt-16 text-center`}>
               <Deco />
             </div>
 
             {/*  筋膜リリースとは */}
-            <section id="fascia" className={`mt-10 md:mt-16`}>
+            <section id="fascia" className={`pt-10 md:pt-16 anchor`}>
               <Heading02 as="h3"> 筋膜リリースとは</Heading02>
               <div className={`mt-4 md:mt-6 text-center`}>
                 <Image
@@ -134,12 +134,12 @@ const ShoulderPage: NextPage = () => {
               </p>
             </section>
 
-            <div className={`mt-10 md:mt-16 text-center`}>
+            <div className={`pt-10 md:pt-16 text-center`}>
               <Deco />
             </div>
 
             {/*  脳内物質セロトニンの正常化で全身が整う！ */}
-            <section id="serotonin" className={`mt-10 md:mt-16`}>
+            <section id="serotonin" className={`pt-10 md:pt-16 anchor`}>
               <Heading02 as="h3"> 事実② 脳内物質セロトニンの正常化で全身が整う！</Heading02>
               <div className={`mt-4 mx-auto w-fit`}>
                 <Image
@@ -164,12 +164,12 @@ const ShoulderPage: NextPage = () => {
               </p>
             </section>
 
-            <div className={`mt-10 md:mt-16 text-center`}>
+            <div className={`pt-10 md:pt-16 text-center`}>
               <Deco />
             </div>
 
             {/*  セロトニン活性療法とは */}
-            <section id="serotonin-therapy" className={`mt-10 md:mt-16`}>
+            <section id="serotonin-therapy" className={`pt-10 md:pt-16 anchor`}>
               <Heading02 as="h3"> セロトニン活性療法とは</Heading02>
               <p className={`mt-4 md:mt-6`}>
                 脳と整体の関係を脳波で測定しながら、脳内物質セロトニン活性化の効果を科学的に立証した手技です。
@@ -199,11 +199,11 @@ const ShoulderPage: NextPage = () => {
               </figure>
             </section>
 
-            <div className={`mt-10 md:mt-16 text-center`}>
+            <div className={`pt-10 md:pt-16 text-center`}>
               <Deco />
             </div>
 
-            <div className={`mt-10 md:mt-16 text-center`}>
+            <div className={`pt-10 md:pt-16 text-center`}>
               <ButtonWithIcon
                 tag="a"
                 linkProps={{ href: '/knowledge/headache/' }}
