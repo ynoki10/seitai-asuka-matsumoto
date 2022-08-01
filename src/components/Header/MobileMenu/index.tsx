@@ -39,7 +39,14 @@ const MobileMenu = (props: Props) => {
                   {headerMenuItems.map((item) => {
                     return (
                       <Link href={item.path} key={item.text}>
-                        <a className={'text-gray100'}>{item.text}</a>
+                        <a
+                          className={'text-gray100'}
+                          onClick={() => {
+                            setIsOpen(false);
+                          }}
+                        >
+                          {item.text}
+                        </a>
                       </Link>
                     );
                   })}
@@ -71,6 +78,9 @@ const MobileMenu = (props: Props) => {
                       className={
                         'flex gap-x-2 justify-center items-center py-2 px-4 mt-4 bg-green03 rounded-md'
                       }
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
                     >
                       <Image src="/assets/images/ico-mail.svg" alt="" width={24} height={19} />
                       <span className={'tracking-wider text-white'}>
