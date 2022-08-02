@@ -22,8 +22,6 @@ const PageHeader = (props: Props) => {
           layout={'fill'}
           objectFit={'cover'}
           className={`md:hidden`}
-          width={750}
-          height={300}
           quality={100}
         />
       </div>
@@ -34,8 +32,6 @@ const PageHeader = (props: Props) => {
           layout={'fill'}
           objectFit={'cover'}
           className={`hidden md:block`}
-          width={1200}
-          height={280}
           quality={100}
         />
       </div>

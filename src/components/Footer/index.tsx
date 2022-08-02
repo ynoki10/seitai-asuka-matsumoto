@@ -92,7 +92,7 @@ const Footer = () => {
                     }
                   >
                     <Image src="/assets/images/ico-mail.svg" alt="" width={24} height={19} />
-                    <span className={'tracking-wider'}>ご予約・お問い合わせフォーム</span>
+                    <span className={'tracking-wider'}>お問い合わせフォーム</span>
                   </a>
                 </Link>
                 <ul className={'pl-2 mt-2 font-normal'}>

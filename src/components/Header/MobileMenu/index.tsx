@@ -84,7 +84,7 @@ const MobileMenu = (props: Props) => {
                     >
                       <Image src="/assets/images/ico-mail.svg" alt="" width={24} height={19} />
                       <span className={'tracking-wider text-white'}>
-                        メールでご予約・お問い合わせ
+                        メールでお問い合わせ
                       </span>
                     </a>
                   </Link>
