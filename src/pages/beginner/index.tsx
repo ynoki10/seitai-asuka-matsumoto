@@ -5,6 +5,7 @@ import Card from '@/components/Card';
 import Container from '@/components/Container';
 import Heading01 from '@/components/Heading/Heading01';
 import Inner from '@/components/Inner';
+import PageHead from '@/components/PageHead';
 import PageHeader from '@/components/PageHeader';
 
 import type { NextPage } from 'next';
@@ -12,6 +13,8 @@ import type { NextPage } from 'next';
 const BeginnerPage: NextPage = () => {
   return (
     <>
+      <PageHead title="初めての方へ" slug={'beginner'} />
+
       <PageHeader
         title={'初めての方へ'}
         imgSrc={{

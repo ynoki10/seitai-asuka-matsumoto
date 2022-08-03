@@ -6,6 +6,7 @@ import Deco from '@/components/Deco';
 import Heading02 from '@/components/Heading/Heading02';
 import Heading04 from '@/components/Heading/Heading04';
 import Inner from '@/components/Inner';
+import PageHead from '@/components/PageHead';
 import PageHeader from '@/components/PageHeader';
 
 import type { NextPage } from 'next';
@@ -13,6 +14,8 @@ import type { NextPage } from 'next';
 const ShoulderPage: NextPage = () => {
   return (
     <>
+      <PageHead title="肩こりの豆知識 | 頭痛・肩こりの豆知識" slug={'knowledge/shoulder'} />
+
       <PageHeader
         title={'肩こりの豆知識'}
         imgSrc={{

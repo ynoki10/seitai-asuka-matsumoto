@@ -2,6 +2,7 @@ import ButtonWithIcon from '@/components/ButtonWithIcon';
 import Container from '@/components/Container';
 import Heading01 from '@/components/Heading/Heading01';
 import Inner from '@/components/Inner';
+import PageHead from '@/components/PageHead';
 import PageHeader from '@/components/PageHeader';
 
 import type { NextPage } from 'next';
@@ -9,6 +10,8 @@ import type { NextPage } from 'next';
 const AccessPage: NextPage = () => {
   return (
     <>
+      <PageHead title="アクセス・営業時間" slug={'access'} />
+
       <PageHeader
         title={'アクセス・営業時間'}
         imgSrc={{

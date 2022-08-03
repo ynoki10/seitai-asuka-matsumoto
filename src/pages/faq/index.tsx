@@ -2,6 +2,7 @@ import Container from '@/components/Container';
 import Faq from '@/components/Faq';
 import Heading01 from '@/components/Heading/Heading01';
 import Inner from '@/components/Inner';
+import PageHead from '@/components/PageHead';
 import PageHeader from '@/components/PageHeader';
 
 import type { NextPage } from 'next';
@@ -46,6 +47,8 @@ const FaqPage: NextPage = () => {
   ];
   return (
     <>
+      <PageHead title="よくあるご質問" slug={'faq'} />
+
       <PageHeader
         title={'よくあるご質問'}
         imgSrc={{

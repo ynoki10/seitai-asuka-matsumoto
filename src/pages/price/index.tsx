@@ -1,6 +1,7 @@
 import Container from '@/components/Container';
 import Heading01 from '@/components/Heading/Heading01';
 import Inner from '@/components/Inner';
+import PageHead from '@/components/PageHead';
 import PageHeader from '@/components/PageHeader';
 
 import type { NextPage } from 'next';
@@ -8,6 +9,8 @@ import type { NextPage } from 'next';
 const PricePage: NextPage = () => {
   return (
     <>
+      <PageHead title="料金" slug={'price'} />
+
       <PageHeader
         title={'料金'}
         imgSrc={{

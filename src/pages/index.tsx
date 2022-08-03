@@ -11,6 +11,7 @@ import Heading01 from '@/components/Heading/Heading01';
 import Heading02 from '@/components/Heading/Heading02';
 import Inner from '@/components/Inner';
 import MVSlider from '@/components/MVSlider';
+import PageHead from '@/components/PageHead';
 import VoiceCard from '@/components/VoiceCard';
 import { client } from '@/libs/client';
 
@@ -24,6 +25,8 @@ type Props = {
 const HomePage: NextPage<Props> = ({ voices }) => {
   return (
     <>
+      <PageHead top={true} slug="" />
+
       {/* MV */}
       <Inner size="lg">
         <p className={'mt-4 text-center md:hidden'}>

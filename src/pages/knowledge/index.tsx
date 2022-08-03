@@ -2,6 +2,7 @@ import ButtonWithIcon from '@/components/ButtonWithIcon';
 import Container from '@/components/Container';
 import Heading01 from '@/components/Heading/Heading01';
 import Inner from '@/components/Inner';
+import PageHead from '@/components/PageHead';
 import PageHeader from '@/components/PageHeader';
 
 import type { NextPage } from 'next';
@@ -9,6 +10,8 @@ import type { NextPage } from 'next';
 const KnowledgePage: NextPage = () => {
   return (
     <>
+      <PageHead title="頭痛・肩こりの豆知識" slug={'knowledge'} />
+
       <PageHeader
         title={'頭痛・肩こりの豆知識'}
         imgSrc={{

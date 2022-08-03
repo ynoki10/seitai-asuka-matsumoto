@@ -3,6 +3,7 @@ import { MicroCMSListResponse } from 'microcms-js-sdk';
 import Container from '@/components/Container';
 import Heading01 from '@/components/Heading/Heading01';
 import Inner from '@/components/Inner';
+import PageHead from '@/components/PageHead';
 import PageHeader from '@/components/PageHeader';
 import Pagination from '@/components/Pagination';
 import VoiceCard from '@/components/VoiceCard';
@@ -18,6 +19,8 @@ const VoicesPage: NextPage<Props> = (props) => {
   const { voices, totalCount } = props;
   return (
     <>
+      <PageHead title="お客様の声" slug={'voices'} />
+
       <PageHeader
         title={'お客様の声'}
         imgSrc={{

@@ -1,5 +1,6 @@
 import Container from '@/components/Container';
 import Inner from '@/components/Inner';
+import PageHead from '@/components/PageHead';
 import PageHeader from '@/components/PageHeader';
 
 import type { NextPage } from 'next';
@@ -7,6 +8,8 @@ import type { NextPage } from 'next';
 const ContactPage: NextPage = () => {
   return (
     <>
+      <PageHead title="お問い合わせ" slug={'contact'} />
+
       <PageHeader
         title={'お問い合わせ'}
         imgSrc={{
