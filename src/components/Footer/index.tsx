@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import Inner from '@/components/Inner';
+import TelButton from '@/components/TelButton';
 
 const footerMenuItems = [
   {
@@ -76,15 +77,7 @@ const Footer = () => {
                 <p className={'text-xs tracking-wider  text-center'}>
                   ご予約・ご相談 まずはお気軽にご連絡ください！※
                 </p>
-                <a
-                  href="tel:070-1586-4141"
-                  className={
-                    'flex gap-x-2 justify-center items-center py-1.5 mt-2 bg-accent rounded-md hover:brightness-105 transition-all duration-300'
-                  }
-                >
-                  <Image src="/assets/images/ico-tel-white.svg" alt="" width="30" height="30" />
-                  <span className={'text-[26px] tracking-wider'}>070-1586-4141</span>
-                </a>
+                <TelButton />
                 <Link href={'/contact'}>
                   <a
                     className={

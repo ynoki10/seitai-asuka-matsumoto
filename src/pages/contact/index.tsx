@@ -1,7 +1,10 @@
 import Container from '@/components/Container';
+import Heading01 from '@/components/Heading/Heading01';
+import Heading04 from '@/components/Heading/Heading04';
 import Inner from '@/components/Inner';
 import PageHead from '@/components/PageHead';
 import PageHeader from '@/components/PageHeader';
+import TelButton from '@/components/TelButton';
 
 import type { NextPage } from 'next';
 
@@ -21,7 +24,58 @@ const ContactPage: NextPage = () => {
       {/*  お問い合わせフォーム */}
       <Container as="section">
         <Inner>
+          <Heading01 as="h2">お問い合わせ・ご予約について</Heading01>
           <div className={`mt-4 md:mt-8 max-w-xl mx-auto`}>
+            <p>
+              当院は完全予約制となっております。
+              <br />
+              予約はお電話、メールから承っております。ご希望の時間をお決めになった上で、いずれかの方法でご連絡ください。
+              <br />
+              また、施術に関する質問やご相談も受け付けておりますのでまずはお気軽にご連絡ください。
+            </p>
+          </div>
+
+          <div className={`mt-12 max-w-xl mx-auto`}>
+            <Heading04 as="h3">お電話でのご予約・お問い合わせ</Heading04>
+            <div className={`md:max-w-[320px] mx-auto mt-4 md:mt-6`}>
+              <TelButton small={true} />
+            </div>
+            <p className={`mt-1 text-[12px] text-center`}>
+              ※施術中は電話に出られないこともございます。
+            </p>
+            <p className={`mt-2 text-center text-[16px] md:text-[18px]`}>
+              【電話受付時間】10:00~19:00 不定休
+            </p>
+          </div>
+
+          <div className={`mt-12 max-w-xl mx-auto`}>
+            <Heading04 as="h3">メールでのご予約・お問い合わせ</Heading04>
+            <div className={`mt-2 md:mt-4 max-w-xl mx-auto`}>
+              <p>
+                ご予約の場合は、ご希望の日時とお名前、お電話番号を明記して下記アドレスまでご送信ください。折り返し返信をさせていただきます。
+                <br />
+                （送信時点ではまだ予約確定ではありませんのでご了承ください。）
+                <br />
+                <a href="mailto:test@example.com" className={`text-green03 underline`}>
+                  test@example.com
+                </a>
+                <br />
+                【ご予約可能な時間】10:00~19:00 ※不定休
+              </p>
+              <p className={`mt-4`}>
+                できるだけ早くお返事できるよう心がけております。お気軽にご連絡ください。
+              </p>
+            </div>
+          </div>
+
+          <div className={`mt-12 max-w-xl mx-auto`}>
+            <Heading04 as="h3">お問い合わせフォーム</Heading04>
+            <div className={`mt-2 md:mt-4 max-w-xl mx-auto`}></div>
+            <p>
+              以下のフォームに必要事項をご入力の上、送信してください。できるだけ早くお返事できるよう心がけております。
+              <br />
+              お気軽にご連絡ください。
+            </p>
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSdxBS4UCiUIzUyzzKzd6Q_TMOZl3JT3CrS34-7LBq57Lme_cg/viewform?embedded=true"
               width="100%"
