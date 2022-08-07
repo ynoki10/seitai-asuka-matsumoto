@@ -73,7 +73,7 @@ const MobileMenu = (props: Props) => {
                 </div>
 
                 <div>
-                  <Link href="/contact/">
+                  <Link href="/contact/#mail">
                     <a
                       className={
                         'flex gap-x-2 justify-center items-center py-2 px-4 mt-4 bg-green03 rounded-md'

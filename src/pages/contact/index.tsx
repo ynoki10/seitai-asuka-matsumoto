@@ -48,7 +48,7 @@ const ContactPage: NextPage = () => {
             </p>
           </div>
 
-          <div className={`mt-12 max-w-xl mx-auto`}>
+          <div className={`mt-12 max-w-xl mx-auto anchor`} id={'mail'}>
             <Heading04 as="h3">メールでのご予約・お問い合わせ</Heading04>
             <div className={`mt-2 md:mt-4 max-w-xl mx-auto`}>
               <p>
