@@ -49,26 +49,6 @@ const ContactPage: NextPage = () => {
           </div>
 
           <div className={`mt-12 max-w-xl mx-auto anchor`} id={'mail'}>
-            <Heading04 as="h3">メールでのご予約・お問い合わせ</Heading04>
-            <div className={`mt-2 md:mt-4 max-w-xl mx-auto`}>
-              <p>
-                ご予約の場合は、ご希望の日時とお名前、お電話番号を明記して下記アドレスまでご送信ください。折り返し返信をさせていただきます。
-                <br />
-                （送信時点ではまだ予約確定ではありませんのでご了承ください。）
-                <br />
-                <a href="mailto:test@example.com" className={`text-green03 underline`}>
-                  test@example.com
-                </a>
-                <br />
-                【ご予約可能な時間】10:00~19:00 ※不定休
-              </p>
-              <p className={`mt-4`}>
-                できるだけ早くお返事できるよう心がけております。お気軽にご連絡ください。
-              </p>
-            </div>
-          </div>
-
-          <div className={`mt-12 max-w-xl mx-auto`}>
             <Heading04 as="h3">お問い合わせフォーム</Heading04>
             <div className={`mt-2 md:mt-4 max-w-xl mx-auto`}></div>
             <p>
