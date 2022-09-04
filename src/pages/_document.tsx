@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-import Script from 'next/script';
 
 import { mobileHeaderHeight } from '@/variables/headerVars';
 
@@ -27,24 +26,6 @@ export default function Document() {
         <meta property="og:site_name" content="整体院あす香" />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
-        {/* Google tag (gtag.js) */}
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-WXQPCCZYF3"
-        />
-        <Script
-          id="gtag-init"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-WXQPCCZYF3');
-          `,
-          }}
-        />
       </Head>
       <body className="font-sans font-medium text-black bg-white">
         <Main />
