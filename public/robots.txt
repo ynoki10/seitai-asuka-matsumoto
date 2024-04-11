@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.asuka-matsumoto.com
+
+# Sitemaps
+Sitemap: https://www.asuka-matsumoto.com/sitemap.xml
