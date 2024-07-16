@@ -27,7 +27,7 @@ const HeadachePage: NextPage = () => {
 
       <Container as="div">
         <Inner>
-          <div className={`max-w-xl mx-auto`}>
+          <div className={`mx-auto max-w-xl`}>
             {/* 目次 */}
             <div className={`bg-gray20 p-4`}>
               <p className={`text-[16px] md:text-[18px]`}>目次</p>
@@ -53,15 +53,15 @@ const HeadachePage: NextPage = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#fascia">
-                    <span className={`text-green03`}>筋膜について</span>
+                  <a href="#brain">
+                    <span className={`text-green03`}>痛みや不調は脳が送るサイン</span>
                   </a>
                 </li>
               </ul>
             </div>
 
             {/*  頭痛の種類 */}
-            <section id="type" className={`pt-10 md:pt-16 anchor`}>
+            <section id="type" className={`anchor pt-10 md:pt-16`}>
               <Heading02 as="h3"> 頭痛の種類</Heading02>
               <dl>
                 <div className={`mt-4 md:mt-6`}>
@@ -79,7 +79,7 @@ const HeadachePage: NextPage = () => {
                   </dd>
                 </div>
               </dl>
-              <div className={`mt-4 mx-auto w-fit`}>
+              <div className={`mx-auto mt-4 w-fit`}>
                 <Image
                   src="/assets/images/headache01.png"
                   alt=""
@@ -118,18 +118,18 @@ const HeadachePage: NextPage = () => {
               </section>
             </section>
 
-            <div className={`pt-10 md:pt-16 text-center`}>
+            <div className={`pt-10 text-center md:pt-16`}>
               <Deco />
             </div>
 
             {/*  片(偏)頭痛が起こるメカニズム */}
-            <section id="mechanism" className={`pt-10 md:pt-16 anchor`}>
+            <section id="mechanism" className={`anchor pt-10 md:pt-16`}>
               <Heading02 as="h3"> 片(偏)頭痛が起こるメカニズム</Heading02>
               <p className={`mt-4 md:mt-6`}>
                 現在でも片頭痛の根本原因は明らかにされていませんが、そのメカニズムは徐々に解明されてきています。現在最も有力であるのが「三叉神経血管説」とされています。
               </p>
               <p id="nerve" className={`mt-4 md:mt-6`}>
-                <span className={`font-bold text-[16px] md:text-[18px]`}>
+                <span className={`text-[16px] font-bold md:text-[18px]`}>
                   三叉神経血管説とは・・・
                 </span>
                 <br />
@@ -149,7 +149,7 @@ const HeadachePage: NextPage = () => {
                 <br />
                 もちろんストレス・疲れ・天候やその他さまざま指摘されている誘発因子を避けることも一つの手段ですが、そもそも脳内のセロトニン量が十分に保たれていることが、片頭痛解消に対する大切な要件となります。
               </p>
-              <div className={`mt-4 mx-auto w-fit`}>
+              <div className={`mx-auto mt-4 w-fit`}>
                 <Image
                   src="/assets/images/headache02.png"
                   alt=""
@@ -160,12 +160,12 @@ const HeadachePage: NextPage = () => {
               </div>
             </section>
 
-            <div className={`pt-10 md:pt-16 text-center`}>
+            <div className={`pt-10 text-center md:pt-16`}>
               <Deco />
             </div>
 
             {/*  セロトニンについて */}
-            <section id="serotonin" className={`pt-10 md:pt-16 anchor`}>
+            <section id="serotonin" className={`anchor pt-10 md:pt-16`}>
               <Heading02 as="h3"> セロトニンについて</Heading02>
               <p className={`mt-4 md:mt-6`}>
                 セロトニンとは情緒・ストレス・睡眠・覚醒・痛みの抑制・自律神経・血管・姿勢の維持などに関与する脳内物質です。正常であれば、自動的・定期的に一定量ずつ分泌され、他の脳内物質の暴走をコントロールして身体と心の安定を保ちますが、過度に不足すると様々な症状を引き起こします。
@@ -185,7 +185,7 @@ const HeadachePage: NextPage = () => {
                 </p>
                 <p className={`mt-4 md:mt-6`}>当院ではこのセロトニン活性療法を取り入れています。</p>
 
-                <figure className={`mt-4 mx-auto w-fit`}>
+                <figure className={`mx-auto mt-4 w-fit`}>
                   <Image
                     src="/assets/images/headache03.jpg"
                     alt=""
@@ -193,19 +193,19 @@ const HeadachePage: NextPage = () => {
                     height={204}
                     quality={100}
                   />
-                  <figcaption className={`text-[12px] md:text-[14px] text-center`}>
+                  <figcaption className={`text-center text-[12px] md:text-[14px]`}>
                     セロトニン活性療法協会 滝本裕之先生と
                   </figcaption>
                 </figure>
               </section>
             </section>
 
-            <div className={`pt-10 md:pt-16 text-center`}>
+            <div className={`pt-10 text-center md:pt-16`}>
               <Deco />
             </div>
 
             {/*  セロトニン活性のためのセルフケア */}
-            <section id="self-care" className={`pt-10 md:pt-16 anchor`}>
+            <section id="self-care" className={`anchor pt-10 md:pt-16`}>
               <Heading02 as="h3"> セロトニン活性のためのセルフケア</Heading02>
               <p className={`mt-4 md:mt-6`}>
                 セロトニンセルフケア（トレーニング）の刺激により、自分でセロトニン神経を鍛えられます。
@@ -215,7 +215,7 @@ const HeadachePage: NextPage = () => {
               <p className={`mt-4 md:mt-6`}>
                 以下では、ご自身でセロトニン分泌を正常に促す方法をご案内します。
               </p>
-              <p className={`mt-4 md:mt-6 font-bold`}>
+              <p className={`mt-4 font-bold md:mt-6`}>
                 ※セルフケアトレーニングによってセロトニン神経の構造が変化しはじめるのは３か月経過するころからです。そのため、最初の３ヶ月がとても重要！少しの時間でよいので、続けて行ってみましょう。
               </p>
               <ol>
@@ -261,69 +261,60 @@ const HeadachePage: NextPage = () => {
               </ol>
             </section>
 
-            <div className={`pt-10 md:pt-16 text-center`}>
+            <div className={`pt-10 text-center md:pt-16`}>
               <Deco />
             </div>
 
-            {/*  筋膜について */}
-            <section id="fascia" className={`pt-10 md:pt-16 anchor`}>
-              <Heading02 as="h3"> 筋膜について</Heading02>
-              <div className={`mt-4 md:mt-6 text-center`}>
+            {/*  痛みや不調は脳が送るサイン */}
+            <section id="brain" className={`anchor pt-10 md:pt-16`}>
+              <Heading02 as="h3"> 痛みや不調は脳が送るサイン</Heading02>
+              <div className={`mt-4 text-center md:mt-6`}>
                 <Image
-                  src="/assets/images/headache04.png"
-                  alt=""
-                  width={335}
-                  height={204}
+                  src="/assets/images/headache06.png"
+                  alt="セロトニンは脳の奥の「脳幹」にある。"
+                  width={257}
+                  height={228}
                   quality={100}
                 />
               </div>
 
               <p className={`mt-4 md:mt-6`}>
-                筋膜とは、筋肉・内臓を含め、身体全体を覆うボディースーツのようなものです。
-              </p>
-              <p className={`mt-4 md:mt-6`}>
-                その一部に硬さや滑走不全が起こると、つながりのある他の場所に硬さや痛みを生じさせます。
+                痛みや不調は「脳が危険を予測」して、体を守るために作り出す反応です。
                 <br />
-                繊維質であるがために、長い期間動きが少なかったり偏った動きしかしないでいると、硬くなったりねじれてしまうことが多く、そこからつながっている別の場所を引っ張ることにより、離れた場所に痛みや動きの制限を起こします。
+                脳が自分の体の感覚を正常に認識できていないとき、それは「危険」と判断されて、痛みや不調が起こってくるのです。
               </p>
               <p className={`mt-4 md:mt-6`}>
-                頭痛に関係する首・肩の筋肉の硬さも、離れた場所の筋膜に原因があることが多い、という事実があります。内臓では副腎の筋膜と頭痛の関わりが深いと言われています。
+                本来、人間はすべての関節をすべての可動域で動かせたり、目を全部の方向に無理なく向けられたり、三半規管が全方向で正常に働いて体のバランスを保てたりするものなのですが、私たちは日常生活の中で体を同じ方向ばかりに動かして使いすぎたり、また逆に使わなさすぎたりするうちに、脳が体の使い方を正しく理解することができなくなりがちです。
               </p>
-
-              <section className={`mt-4 md:mt-6`}>
-                <Heading04 as="h4">筋膜リリースとは</Heading04>
-                <div className={`mt-4 md:mt-6 text-center`}>
-                  <Image
-                    src="/assets/images/headache05.jpg"
-                    alt=""
-                    width={335}
-                    height={204}
-                    quality={100}
-                  />
-                </div>
-                <p className={`mt-4 md:mt-6`}>
-                  筋膜リリースはソフトな手技で、筋膜同士の癒着や硬結を丁寧にほどくように緩めていく手法です。
-                  <br />
-                  細かく分けると、全身には複数の筋膜ラインがあり、ラインごとに筋膜がつながりあって様々な動きを作っています。
-                </p>
-                <p className={`mt-4 md:mt-6`}>
-                  当院では「痛いところには原因がない」という筋膜リリースの考え方に基づき、痛さや硬さのある部位から筋膜ラインを判断し、離れた場所にある筋膜の硬結や滑走不全を緩め、結果としてつらい部位の痛みを軽減したり、滑走性を上げるようにアプローチしています。
-                </p>
-                <p className={`mt-4 md:mt-6`}>
-                  頭痛の原因の一つである首肩の筋肉の過緊張も筋膜でつながる離れた場所をリリースすることが大切です。マッサージやリラクゼーションとは違うアプローチを実感してください。
-                </p>
-              </section>
+              <p className={`mt-4 md:mt-6`}>
+                そんな時、脳が「このままでは危険だよ！」「これ以上無理をしてはいけないよ！」というサインを「痛みや不調」として出しているわけです。
+              </p>
+              <p className={`mt-4 md:mt-6`}>
+                では、どうすれば痛みや不調が解決するのでしょうか。
+                <br />
+                それには、脳にもう一度正しい体や目の動き、バランス器官の正しい位置などをインプットし直してあげることが必要です。そうやって日常生活で使えていない「体の感覚」を思い出すことで、脳が体を正しく認識することができると、必要以上に出されていた痛みや症状が変化していきます。
+              </p>
+              <p className={`mt-4 md:mt-6`}>
+                頭痛の場合は、前述のセロトニンに関わる部位であり脳神経の始まりである「脳幹」は重要ですが、それ以外にも重要な脳部位がたくさんあります。
+                <br />
+                特に、体のバランスに関わる前庭・小脳、さらに自律神経と大きな関わりのある島皮質などが大切なポイントです。
+                <br />
+                当院ではそれらに注目し、「脳が感じる危険」を減らし、その結果つらい痛みを軽減していく道筋を考えます。
+              </p>
+              <p className={`mt-4 md:mt-6`}>
+                あなたも「毎日を楽にする」ために、体と向き合ってみませんか？
+              </p>
             </section>
 
-            <div className={`pt-10 md:pt-16 text-center`}>
+            <div className={`pt-10 text-center md:pt-16`}>
               <Deco />
             </div>
 
-            <div className={`pt-10 md:pt-16 text-center`}>
+            <div className={`pt-10 text-center md:pt-16`}>
               <ButtonWithIcon
                 tag="a"
                 linkProps={{ href: '/knowledge/shoulder/' }}
-                className={`mt-4 mx-auto max-w-sm`}
+                className={`mx-auto mt-4 max-w-sm`}
               >
                 肩こりの豆知識へ
               </ButtonWithIcon>

@@ -26,7 +26,7 @@ const MVSlider = () => {
           {['01', '02', '03', '04'].map((el, i) => {
             return (
               <SwiperSlide key={el}>
-                <div className={`md:hidden h-[400px]`}>
+                <div className={`h-[400px] md:hidden`}>
                   <Image
                     src={`/assets/images/mv_sp${el}.jpg`}
                     alt=""
@@ -36,10 +36,10 @@ const MVSlider = () => {
                     layout="fill"
                     objectFit="cover"
                     objectPosition={`${el === '01' ? '0%' : '40%'} center`}
-                    className={`rounded-[10px] overflow-hidden`}
+                    className={`overflow-hidden rounded-[10px]`}
                   />
                 </div>
-                <div className={`hidden md:block h-[480px]`}>
+                <div className={`hidden h-[480px] md:block`}>
                   <Image
                     src={`/assets/images/mv_pc${el}.jpg`}
                     alt=""
@@ -48,7 +48,7 @@ const MVSlider = () => {
                     loading={i === 0 ? 'eager' : 'lazy'}
                     layout="fill"
                     objectFit="cover"
-                    className={`rounded-2xl overflow-hidden`}
+                    className={`overflow-hidden rounded-2xl`}
                   />
                 </div>
               </SwiperSlide>
@@ -56,21 +56,20 @@ const MVSlider = () => {
           })}
         </Swiper>
         <p
-          className={`absolute top-5 right-5 [writing-mode:vertical-rl] md:[writing-mode:horizontal-tb] md:left-12 md:top-32 z-10 font-maru tracking-wider text-[#232C33] md:tracking-widest`}
+          className={`absolute right-5 top-5 z-10 font-maru tracking-wider text-[#232C33] [writing-mode:vertical-rl] md:left-12 md:top-32 md:tracking-widest md:[writing-mode:horizontal-tb]`}
         >
           <span
-            className={`bg-[#fff] block py-3 px-2 text-[22px] h-fit md:text-[42px] md:w-fit md:pb-1 md:pt-0 md:px-5 md:rounded-[10px]`}
+            className={`block h-fit bg-[#fff] px-2 py-3 text-[22px] md:w-fit md:rounded-[10px] md:px-5 md:pb-1 md:pt-0 md:text-[42px]`}
           >
-            つらい頭痛・肩こりからの
+            痛みや不調の原因は？
           </span>
           <span
-            className={`bg-[#fff] block mr-2 py-3 px-2 text-[22px] h-fit md:text-[42px] md:w-fit md:pb-1 md:pt-0 md:px-5 md:mt-3 md:mr-0 md:rounded-[10px]`}
+            className={`mr-2 block h-fit bg-[#fff] px-2 py-3 text-[22px] md:mr-0 md:mt-3 md:w-fit md:rounded-[10px] md:px-5 md:pb-1 md:pt-0 md:text-[42px]`}
           >
-            <span className={`-mt-3 md:mt-0 md:-ml-5`}>「卒業」</span>
-            <span className={`-mt-2 md:mt-0 md:-ml-4`}>をサポート</span>
+            脳からカラダを考える整体院
           </span>
           <span
-            className={`bg-[#fff] block mr-2 py-3 px-2 text-sm h-fit md:text-[20px] md:w-fit md:py-3 md:px-5 md:mt-3 md:mr-0 md:rounded-[10px]`}
+            className={`mr-2 block h-fit bg-[#fff] px-2 py-3 text-sm md:mr-0 md:mt-3 md:w-fit md:rounded-[10px] md:px-5 md:py-3 md:text-[20px]`}
           >
             痛みのない元気な毎日を過ごせるよう心を込めて
           </span>
