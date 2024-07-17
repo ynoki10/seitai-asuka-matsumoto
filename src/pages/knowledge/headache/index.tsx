@@ -54,7 +54,7 @@ const HeadachePage: NextPage = () => {
                 </li>
                 <li>
                   <a href="#brain">
-                    <span className={`text-green03`}>痛みや不調は脳が送るサイン</span>
+                    <span className={`text-green03`}>痛みや不調は脳が作り出すサイン</span>
                   </a>
                 </li>
               </ul>
@@ -265,9 +265,9 @@ const HeadachePage: NextPage = () => {
               <Deco />
             </div>
 
-            {/*  痛みや不調は脳が送るサイン */}
+            {/*  痛みや不調は脳が作り出すサイン */}
             <section id="brain" className={`anchor pt-10 md:pt-16`}>
-              <Heading02 as="h3"> 痛みや不調は脳が送るサイン</Heading02>
+              <Heading02 as="h3"> 痛みや不調は脳が作り出すサイン</Heading02>
               <div className={`mt-4 text-center md:mt-6`}>
                 <Image
                   src="/assets/images/headache06.png"

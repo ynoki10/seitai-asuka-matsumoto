@@ -53,7 +53,7 @@ const HomePage: NextPage<Props> = ({ voices }) => {
               <p className={`mt-2 md:mt-4`}>
                 整体院あす香は、頭痛・肩こり専門の整体院です。お客様がつらい頭痛・肩こりから「卒業」し、痛みのない元気な毎日を過ごせるよう、心をこめてサポートいたします。
                 <br />
-                頭痛・肩こりの根本原因にアプローチする確かな技術、オールハンド（手技）によるやさしい施術、「頭痛・肩こりの起きにくい体質」を作るための日々のセルフケア指導まで、あらゆる面からお客様の症状と向き合います。
+                頭痛・肩こりの根本原因を「脳とカラダのつながり」から考えてアプローチする確かな技術、オールハンド（手技）によるやさしい施術、「頭痛・肩こりの起きにくい体質」を作るための日々のセルフケア指導まで、あらゆる面からお客様の症状と向き合います。
                 <br />
                 どうぞお気軽にご相談ください！
               </p>
@@ -137,6 +137,9 @@ const HomePage: NextPage<Props> = ({ voices }) => {
               />
             </div>
             <p className={`mt-4 md:mt-0 w-fit mx-auto`}>
+              <span className={`block -ml-2 text-[min(3.73vw,18px)] md:text-[16px]`}>
+                「痛みや不調は脳が作り出すサイン」です。
+              </span>
               <span
                 className={`font-bold text-[min(4.8vw,22px)] md:text-[24px] tracking-normal text-green03 underline decoration-accent decoration-2 underline-offset-[6px]`}
               >
@@ -295,7 +298,7 @@ const HomePage: NextPage<Props> = ({ voices }) => {
                 <br />
                 しかし、本当に体に良い変化をもたらすにはそれだけでは足りないと気づき、さらに根本的な解決を目的とした機能神経学に出会い、「脳」から考える痛みや不調の捉え方やその解決方法を深く学ぶことができました。
                 <br />
-                小さな整体院ですが、あなたが頭痛から卒業し痛みのない元気な毎日を迎えられるよう、心を込めてサポートします。どうぞお気軽にご相談下さい。
+                小さな整体院ですが、あなたが痛みや不調から卒業し元気な毎日を迎えられるよう、心を込めてサポートします。どうぞお気軽にご相談下さい。
               </p>
               <p className={`mt-2 font-bold text-[18px] text-green03`}>整体師 くすのき 延枝</p>
             </div>
