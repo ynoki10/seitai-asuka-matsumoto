@@ -28,7 +28,7 @@ const PricePage: NextPage = () => {
             <span className={`mx-3`}>→</span>
             <span className={`flex flex-col items-center`}>
               <span className={`text-green03 font-bold leading-none`}>
-                <span className={`text-[40px] md:text-[60px]`}>2</span>
+                <span className={`text-[40px] md:text-[60px]`}>3</span>
                 <span className={`text-[22px] md:text-[30px]`}>,</span>
                 <span className={`text-[40px] md:text-[60px]`}>980</span>
                 <span className={`text-[16px] md:text-[20px]`}>円</span>

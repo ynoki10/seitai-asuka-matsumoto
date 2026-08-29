@@ -166,7 +166,7 @@ const HomePage: NextPage<Props> = ({ voices }) => {
               <a className={`hover:opacity-75 transition-opacity`}>
                 <Image
                   src={'/assets/images/price-bnr.png'}
-                  alt="初めてのお客様はお試し料金！ 2980円"
+                  alt="初めてのお客様はお試し料金！ 3980円"
                   width={400}
                   height={140}
                   quality={100}
@@ -259,7 +259,7 @@ const HomePage: NextPage<Props> = ({ voices }) => {
                 <a className={`hover:opacity-75 transition-opacity`}>
                   <Image
                     src={'/assets/images/price-bnr.png'}
-                    alt="初めてのお客様はお試し料金！ 2980円"
+                    alt="初めてのお客様はお試し料金！ 3980円"
                     width={400}
                     height={140}
                     quality={100}
